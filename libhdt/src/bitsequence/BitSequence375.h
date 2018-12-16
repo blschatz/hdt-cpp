@@ -22,7 +22,9 @@
 #include <stdint.h>
 #include <iostream>
 #include <vector>
-
+#ifdef WIN32
+#include <intrin.h>
+#endif
 #include "BitSeq.h"
 
 namespace hdt

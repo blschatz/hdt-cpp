@@ -26,10 +26,12 @@
 #ifndef WIN32
 #include <sys/resource.h>
 #include <sys/times.h>
+#include <unistd.h>
+#else
+#include <Minwindef.h>
 #endif
 #include <stdio.h>
 #include <stdlib.h>
-#include <unistd.h>
 #include <sys/stat.h>
 #include <iostream>
 #include <fstream>
